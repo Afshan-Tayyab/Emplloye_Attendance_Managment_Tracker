@@ -1,3 +1,4 @@
+
 attendance={}
 def mark_attendance(emp_id,date,status):
     if emp_id not in attendance:

@@ -1,13 +1,13 @@
 from employee import add_employee, view_all, search_by_id, search_by_name, update_salary, delete_employee
 from attendance import mark_attendance, record_work_hours, monthly_attendance
-# from salary import calculate_salary
+from salary import calculate_salary
 def main():
     while True:
         print('\n' + '='*50)
         print("Employee Management System")
         print('='*50)
         print("""
-         1. Add Employee
+        1. Add Employee
         2. Mark Attendance
         3. Record Working Hours
         4. View Monthly Attendance Report
@@ -47,10 +47,9 @@ def main():
             monthly_attendance(emp_id,month)
  
         elif choice == '5':
-            # emp_id=int(input("Enter Emplooye Id:"))
-            # month=input("Enter the month (MM-YY) for attendance report:")
-            # calculate_salary(emp_id,month)
-            pass
+            emp_id=int(input("Enter Emplooye Id:"))
+            month=input("Enter the month (MM-YY) for attendance report:")
+            calculate_salary(emp_id,month)
  
  
         elif choice == '6':

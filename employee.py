@@ -59,11 +59,10 @@ def search_by_id(emp_id):
     return "Employee not found"
 
 def search_by_name(name):
-    result = []
     for emp in employee:
         if name.lower() in emp['name'].lower():
-            result.append(emp)
-    return result if result else "Employee not found"
+            return emp
+    return "Employee not found"
 
 def update_salary(emp_id, new_salary):
     for emp in employee:
