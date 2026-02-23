@@ -4,7 +4,9 @@ from salary import calculate_salary
 def main():
     while True:
         print('\n' + '='*50)
-        print("Employee Management System")
+        print("EMPLOYEE MANAGEMENT SYSTEM")
+        print('='*50)
+        print("     Manage Smart, Work Better")
         print('='*50)
         print("""
         1. Add Employee
