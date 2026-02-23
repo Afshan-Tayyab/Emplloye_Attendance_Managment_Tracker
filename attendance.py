@@ -119,27 +119,17 @@ def record_work_hours(emp_id, date, hours):
     print("Employee ID not found in system")
 
 def monthly_attendance(emp_id, month):
-    # Check if employee exists without flag variable
     for emp in employee:
         if emp['id'] == emp_id:
-            # Employee found
             if emp_id not in attendance:
-                print("No attendance found for this employee")
+                print("No attendance found")
                 return
             
-            print(f"\nMonthly Attendance for {month}")
-            print("-" * 30)
-            
-            records_found = False
+            print(f"\nAttendance for {month}")
             for date in attendance[emp_id]:
-                if date.endswith(month):
+                if date.endswith(month):  # Checks if date ends with "01-2026"
                     print(f"{date}: {attendance[emp_id][date]}")
-                    records_found = True
-            
-            if not records_found:
-                print(f"No attendance records found for {month}")
             return
     
-    # Employee not found
-    print("Employee ID not found in system")
+    print("Employee not found")
  
