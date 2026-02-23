@@ -47,9 +47,9 @@ def main():
             monthly_attendance(emp_id,month)
  
         elif choice == '5':
-            emp_id=int(input("Enter Emplooye Id:"))
-            month=input("Enter the month (MM-YY) for attendance report:")
-            calculate_salary(emp_id,month)
+            emp_id=int(input("Enter Employee Id:"))
+            month=input("Enter the month (MM-YYYY) for salary calculation:")  # Enter "01-2026" not "01-01-2026"
+            calculate_salary(emp_id, month)
  
  
         elif choice == '6':

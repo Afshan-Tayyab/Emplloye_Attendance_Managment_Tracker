@@ -17,22 +17,18 @@ def calculate_salary(emp_id, month):
 
     if emp_id in attendance:
         for date in attendance[emp_id]:
-
-            if month in date:
-
+            # Check if date ENDS WITH month (MM-YYYY)
+            if date.endswith(month):  # "01-01-2026".endswith("01-2026") = True
                 if attendance[emp_id][date].lower() == "present":
-                    days_present = days_present + 1
+                    days_present += 1
 
                     if emp_id in work_hours:
                         if date in work_hours[emp_id]:
-                            total_hours = total_hours + work_hours[emp_id][date]
+                            total_hours += work_hours[emp_id][date]
 
-
-
-    if days_present >= 22:
+    bonus = 0
+    if days_present == 5:
         bonus = 2000
-    else:
-        bonus = 0
 
     net_salary = base_salary + bonus
 
