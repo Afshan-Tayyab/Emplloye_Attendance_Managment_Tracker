@@ -1,25 +1,45 @@
-**Employee Attendance Management Tracker**
+# Employee Attendance Management Tracker
 
-A Python-based command-line application for managing employee information, attendance records, and salary details. The project is designed as a simple employee management system using separate Python modules for better organization and maintainability.
+A Python-based Employee Attendance Management System designed to manage employee records, attendance, working hours, salary details, and employee information. The project also includes a Streamlit web interface for easy interaction.
 
-**Features**
+## Live Application
 
-- Add and manage employee details
-- Track employee attendance
-- Manage salary information
-- View employee records
-- Command-line interface for interacting with the system
-- Modular Python code structure
-- Simple and beginner-friendly implementation
+The application is deployed using Streamlit Community Cloud.
 
-**Project Structure**
+**Live Demo:** https://emplloyeattendancemanagmenttracker-puvqffsb6kcdxxvfvw5w4j.streamlit.app/
+
+## Features
+
+- Add new employees
+- View all employees
+- Search employees by ID or name
+- Update employee salary
+- Delete employee records
+- Mark daily attendance
+- Record working hours
+- View monthly attendance reports
+- Calculate employee salary
+- Streamlit-based web interface
+- Simple and user-friendly dashboard
+
+## Technologies Used
+
+- Python
+- Streamlit
+- Git
+- GitHub
+
+## Project Structure
 
 ```text
-Employee_Attendance_Management_Tracker/
+Employee_Managment_Attendance_07/
 │
-├── attendance.py
+├── app.py
 ├── employee.py
-├── main.py
+├── attendance.py
 ├── salary.py
-├── .devcontainer/
-└── README.md
+├── main.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── .devcontainer/
